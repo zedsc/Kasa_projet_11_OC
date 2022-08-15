@@ -1,0 +1,24 @@
+footer {
+  height: 209px;
+  width: 100%;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .logo-container {
+    margin: 65px auto 30px auto;
+    .logo {
+      width: 122px;
+      height: 39.5px;
+      -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(10%)
+        saturate(2%) hue-rotate(285deg) brightness(105%) contrast(101%);
+      filter: brightness(0) saturate(100%) invert(100%) sepia(10%) saturate(2%)
+        hue-rotate(285deg) brightness(105%) contrast(101%);
+    }
+  }
+  p {
+    color: $white;
+    font-size: map-get($font-size, "12");
+    margin: 0px auto auto auto;
+  }
+}

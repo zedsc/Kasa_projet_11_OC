@@ -1,0 +1,13 @@
+//Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+//Custom
+@import "./abstracts/variables";
+@import "./base/reset";
+@import "./base/base";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./components/carousel";
+@import "./components/banner";
+@import "./components/card";
+@import "./pages/error404";

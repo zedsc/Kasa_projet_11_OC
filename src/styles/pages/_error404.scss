@@ -1,0 +1,22 @@
+.error-page {
+  margin-top: 180px;
+  text-align: center;
+  h1 {
+    color: $color-primary;
+    font-size: map-get($font-size, "96");
+    font-weight: $weight-bold;
+    margin-bottom: 10px;
+  }
+  h2 {
+    color: $color-primary;
+    font-size: map-get($font-size, "18");
+    font-weight: $weight-bold;
+    margin-bottom: 130px;
+  }
+  p {
+    color: $color-primary;
+    font-size: map-get($font-size, "14");
+    font-weight: $weight-bold;
+    margin-bottom: 230px;
+  }
+}

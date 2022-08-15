@@ -1,0 +1,22 @@
+header {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+  .logo {
+    width: 145px;
+    height: 47px;
+  }
+  .navbar {
+    ul {
+      display: flex;
+      li {
+        text-transform: uppercase;
+        font-size: map-get($font-size, "12");
+        color: $color-primary;
+        margin-left: 10px;
+      }
+    }
+  }
+}
