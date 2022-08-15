@@ -13,9 +13,11 @@ const Housings = () => {
   return (
     <section className="housings-container">
       <h2 className="housings-title sr-only">Liste des logements</h2>
-      {data.map((housing, index) => (
-        <Card key={housing.id} housing={housing} />
-      ))}
+      <div className="row">
+        {data.map((housing, index) => (
+          <Card key={housing.id} housing={housing} />
+        ))}
+      </div>
     </section>
   );
 };
