@@ -5,9 +5,13 @@ import Header from "../components/Header";
 const About = () => {
   return (
     <div>
-      <Header />
-      <h1 className="about">A propos</h1>
-      <Footer />
+      <div className="main-wrapper">
+        <Header />
+        <h1 className="about">A propos</h1>
+      </div>
+      <div className="footer-container">
+        <Footer />
+      </div>
     </div>
   );
 };
