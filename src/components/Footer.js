@@ -1,10 +1,10 @@
 import React from "react";
-import LogoWB from "./LogoWB";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
     <footer>
-      <LogoWB />
+      <Logo />
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   );
