@@ -1,0 +1,21 @@
+.tags {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 10px 5px 0px;
+  border-radius: $radius-5;
+  overflow: hidden;
+  padding: 2px 20px;
+  border-style: none;
+  background-color: $color-primary;
+  &__txt {
+    color: $white;
+    font-size: map-get($font-size, "10");
+  }
+}
