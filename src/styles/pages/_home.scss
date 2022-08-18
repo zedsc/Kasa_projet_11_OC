@@ -1,0 +1,15 @@
+.housings-container {
+  @include medium-device-above {
+    background-color: $color-secondary;
+    border-radius: $radius-25;
+    padding: 50px 10px 0px 10px;
+  }
+  .row {
+    @include x-large-device-above {
+      //margin-left: 25px;
+      --bs-gutter-x: 4.1rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
