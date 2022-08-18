@@ -6,6 +6,33 @@
     height: 111px;
     border-radius: $radius-10;
     overflow: hidden;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(0, 0, 0, 0.2497199563419118) 0%,
+        rgba(0, 0, 0, 0.24691883589373254) 100%
+      ),
+      url("../../../public/banner1.png");
+
+    @include large-device-above {
+      height: 223px;
+    }
+    @include x-large-device-above {
+      border-radius: $radius-25;
+    }
+    &--xs {
+      @include x-small-device {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+            180deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(0, 0, 0, 0.2497199563419118) 0%,
+            rgba(0, 0, 0, 0.24691883589373254) 100%
+          ),
+          url("../../../public/banner2.png");
+      }
+    }
   }
   &__txt {
     font-size: map-get($font-size, "24");
@@ -14,12 +41,36 @@
     position: absolute;
     top: 35%;
     left: 6%;
-    width: 53%;
+    width: 68%;
+    @include xx-small-device {
+      width: 92%;
+    }
+    @include large-device-above {
+      font-size: map-get($font-size, "48");
+      width: 59%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+}
+
+.banner-about {
+  height: 223px;
+  margin: 0 auto 20px auto;
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: $radius-10;
+    @include x-large-device-above {
+      border-radius: $radius-25;
+    }
   }
 }

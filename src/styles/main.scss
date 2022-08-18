@@ -3,6 +3,7 @@
 
 //Custom
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
 @import "./base/reset";
 @import "./base/base";
 @import "./layouts/header";
@@ -10,4 +11,10 @@
 @import "./components/carousel";
 @import "./components/banner";
 @import "./components/card";
+@import "./components/tag";
+@import "./components/owner";
+@import "./components/collapse-box";
+@import "./pages/home";
 @import "./pages/error404";
+@import "./pages/housing";
+@import "./pages/about";

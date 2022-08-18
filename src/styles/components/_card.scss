@@ -6,6 +6,10 @@
     height: 255px;
     width: 100%;
     object-fit: cover;
+    @include x-large-device-above {
+      height: 340px;
+      width: 340px;
+    }
   }
   &-gradient {
     position: relative;
@@ -25,6 +29,10 @@
       height: 100%;
       border-radius: $radius-10;
       opacity: 0.4;
+      @include x-large-device-above {
+        height: 340px;
+        width: 340px;
+      }
     }
   }
 

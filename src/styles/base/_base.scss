@@ -11,4 +11,17 @@
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  @include x-large-device-above {
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.display-none {
+  display: none;
 }

@@ -20,5 +20,8 @@ footer {
     color: $white;
     font-size: map-get($font-size, "12");
     margin: 0px auto auto auto;
+    @include large-device-above {
+      font-size: map-get($font-size, "24");
+    }
   }
 }
