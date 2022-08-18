@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 
 const Gallery = ({ housing }) => {
@@ -25,6 +26,15 @@ const Gallery = ({ housing }) => {
     );
   }
   console.log(carouselChild);
+
+  useEffect(() => {
+    const prevArrow = document.querySelector(".carousel-control-prev");
+    const nextArrow = document.querySelector(".carousel-control-next");
+    if (carouselChild.length === 0) {
+      prevArrow.className = "carousel-control-prev display-none";
+      nextArrow.className = "carousel-control-next display-none";
+    }
+  }, [carouselChild]);
 
   return (
     <Carousel
