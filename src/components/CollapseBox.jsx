@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Collapse from "react-bootstrap/Collapse";
 
-const CollapseBox = ({ content, title, id }) => {
+const CollapseBox = ({ content, title, id, className }) => {
   const [open, setOpen] = useState(false);
   const [arrowActive, setArrowActive] = useState(false);
 
@@ -15,17 +15,20 @@ const CollapseBox = ({ content, title, id }) => {
   };
 
   return (
-    <div className="housing-desc">
+    <div className={className}>
       <Button
         bsPrefix="btn-collapse"
-        onClick={() => setOpen(!open)}
+        onClick={() => {
+          setOpen(!open);
+          clickRotateArrow();
+        }}
         aria-controls={title + id}
         aria-expanded={open}
       >
         {title}
         <svg
           className={arrowActive ? "arrow-collapse rotate" : "arrow-collapse"}
-          onClick={clickRotateArrow}
+          //onClick={clickRotateArrow}
           width="25"
           height="15"
           viewBox="0 0 25 15"
@@ -39,7 +42,7 @@ const CollapseBox = ({ content, title, id }) => {
         </svg>
       </Button>
       <Collapse in={open}>
-        <p id={title + id} className="housing-desc__txt">
+        <p id={title + id} className={"collapse__txt " + className + "__txt"}>
           {content}
         </p>
       </Collapse>
