@@ -4,10 +4,18 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
+  @include large-device-above {
+    flex-direction: column;
+    align-items: end;
+  }
   &-container {
     display: flex;
     width: 70%;
     justify-content: flex-end;
+    align-items: center;
+    @include large-device-above {
+      width: unset;
+    }
   }
   &__name {
     width: 25%;
@@ -15,20 +23,38 @@
     font-size: map-get($font-size, "12");
     text-align: right;
     margin-right: 10px;
+    @include large-device-above {
+      font-size: map-get($font-size, "18");
+      width: 50%;
+    }
   }
   &-img-container {
     border-radius: $radius-circle;
     width: 32px;
     height: 32px;
     overflow: hidden;
+    @include large-device-above {
+      height: 64px;
+      width: 64px;
+    }
   }
   &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .rating__star {
-    height: 15px;
-    width: 15px;
+
+  .host__rating {
+    @include large-device-above {
+      margin-top: 20px;
+    }
+    .rating__star {
+      height: 15px;
+      width: 15px;
+      @include large-device-above {
+        height: 30px;
+        width: 30px;
+      }
+    }
   }
 }

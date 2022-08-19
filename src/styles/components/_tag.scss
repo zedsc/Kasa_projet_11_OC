@@ -14,8 +14,14 @@
   padding: 2px 20px;
   border-style: none;
   background-color: $color-primary;
+  @include large-device-above {
+    border-radius: $radius-10;
+  }
   &__txt {
     color: $white;
     font-size: map-get($font-size, "10");
+    @include large-device-above {
+      font-size: map-get($font-size, "14");
+    }
   }
 }

@@ -6,17 +6,27 @@
     font-size: map-get($font-size, "96");
     font-weight: $weight-bold;
     margin-bottom: 10px;
+    @include large-device-above {
+      font-size: map-get($font-size, "288");
+    }
   }
   h2 {
     color: $color-primary;
     font-size: map-get($font-size, "18");
     font-weight: $weight-bold;
     margin-bottom: 130px;
+    @include large-device-above {
+      font-size: map-get($font-size, "36");
+      letter-spacing: -0.2px;
+    }
   }
   p {
     color: $color-primary;
     font-size: map-get($font-size, "14");
     font-weight: $weight-bold;
     margin-bottom: 230px;
+    @include large-device-above {
+      font-size: map-get($font-size, "18");
+    }
   }
 }

@@ -1,13 +1,24 @@
 .housing-presentation {
+  @include large-device-above {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+  }
   .housing-title {
     color: $color-primary;
     font-size: map-get($font-size, "18");
     margin-bottom: 5px;
+    @include large-device-above {
+      font-size: map-get($font-size, "36");
+    }
   }
   .housing-location {
     color: $color-primary;
     font-size: map-get($font-size, "14");
     margin-bottom: 15px;
+    @include large-device-above {
+      font-size: map-get($font-size, "18");
+    }
   }
 }
 
