@@ -21,14 +21,15 @@ const Housing = () => {
           <Gallery housing={housing} />
         </section>
         <section className="housing-presentation">
-          <h1 className="housing-title">{housing.title}</h1>
-          <h2 className="housing-location">{housing.location}</h2>
-          <div className="tags">
-            {housing.tags.map((tag) => (
-              <Tag key={housing.id + "-" + tag} tag={tag} />
-            ))}
+          <div className="housing-title-loc-tags-container">
+            <h1 className="housing-title">{housing.title}</h1>
+            <h2 className="housing-location">{housing.location}</h2>
+            <div className="tags">
+              {housing.tags.map((tag) => (
+                <Tag key={housing.id + "-" + tag} tag={tag} />
+              ))}
+            </div>
           </div>
-
           <Owner owner={housing.host} rating={housing.rating} />
         </section>
         <section className="housing-details">
@@ -37,10 +38,12 @@ const Housing = () => {
             id="1"
             title="Description"
             content={housing.description}
+            className="housing-desc"
           />
           <CollapseBox
             id="2"
             title="Equipements"
+            className="housing-desc"
             content={housing.equipments.map((kit) => (
               <span className="housing-desc__kit">{kit}</span>
             ))}

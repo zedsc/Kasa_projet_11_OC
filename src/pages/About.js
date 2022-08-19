@@ -9,17 +9,19 @@ const About = () => {
       <div className="main-wrapper">
         <Header />
         <div className="banner-about">
-          <img
+          <div className="banner-about__img banner-about__img--xs"></div>
+          {/*   <img
             src={`${process.env.PUBLIC_URL}/banner2.png`}
             alt="Fond bannière nature"
             className="banner-about__img"
-          />
+          /> */}
         </div>
         <section className="about">
           <h1 className="about__title sr-only">A propos</h1>
           <CollapseBox
             id="1"
             title="Fiabilité"
+            className="collapse-main about"
             content="Les annonces postées sur Kasa garantissent une fiabilité totale.
             Les photos sont conformes aux logements, et toutes les
             informations sont régulièrement vérifiées par nos équipes."
@@ -27,6 +29,7 @@ const About = () => {
           <CollapseBox
             id="2"
             title="Respect"
+            className="about"
             content=" La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
             comportement discriminatoire ou de perturbation du voisinage
             entraînera une exclusion de notre plateforme."
@@ -34,6 +37,7 @@ const About = () => {
           <CollapseBox
             id="3"
             title="Service"
+            className="about"
             content=" Nos équipes se tiennent à votre disposition pour vous fournir une
             expérience parfaite. N'hésitez pas à nous contacter si vous avez
             la moindre question."
@@ -41,6 +45,7 @@ const About = () => {
           <CollapseBox
             id="4"
             title="Sécurité"
+            className="about"
             content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
             pour les voyageurs, chaque logement correspond aux critères de
             sécurité établis par nos services. En laissant une note aussi bien
