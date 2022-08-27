@@ -25,7 +25,6 @@ const Gallery = ({ housing }) => {
       </Carousel.Item>
     );
   }
-  console.log(carouselChild);
 
   useEffect(() => {
     const prevArrow = document.querySelector(".carousel-control-prev");
