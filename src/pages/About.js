@@ -10,18 +10,14 @@ const About = () => {
         <Header />
         <div className="banner-about">
           <div className="banner-about__img banner-about__img--xs"></div>
-          {/*   <img
-            src={`${process.env.PUBLIC_URL}/banner2.png`}
-            alt="Fond bannière nature"
-            className="banner-about__img"
-          /> */}
         </div>
         <section className="about">
           <h1 className="about__title sr-only">A propos</h1>
           <CollapseBox
             id="1"
+            data-testid="collapse-about"
             title="Fiabilité"
-            className="collapse-main about"
+            className="about"
             content="Les annonces postées sur Kasa garantissent une fiabilité totale.
             Les photos sont conformes aux logements, et toutes les
             informations sont régulièrement vérifiées par nos équipes."
