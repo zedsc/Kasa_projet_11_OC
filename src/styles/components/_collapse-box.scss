@@ -1,7 +1,9 @@
 // Main
 .btn-collapse {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: $color-primary;
   width: 100%;
   margin-bottom: 20px;
@@ -26,7 +28,6 @@
 
 .arrow-collapse {
   width: 15px;
-  height: auto;
   @include large-device-above {
     width: 22px;
   }

@@ -52,6 +52,7 @@
 // IMG
 @mixin w100-h100-cover {
   object-fit: cover;
+  -o-object-fit: cover;
   height: 100%;
   width: 100%;
 }

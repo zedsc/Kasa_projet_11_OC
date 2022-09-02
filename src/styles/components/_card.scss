@@ -5,6 +5,7 @@
     border-radius: $radius-10;
     height: 255px;
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
     @include x-large-device-above {
       height: 340px;
