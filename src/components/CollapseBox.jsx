@@ -6,6 +6,9 @@ const CollapseBox = ({ content, title, id, className }) => {
   const [open, setOpen] = useState(false);
   const [arrowActive, setArrowActive] = useState(false);
 
+  /**
+   * Set arrow rotation when clicking
+   */
   const clickRotateArrow = () => {
     if (arrowActive === false) {
       setArrowActive(true);
@@ -28,7 +31,6 @@ const CollapseBox = ({ content, title, id, className }) => {
         {title}
         <svg
           className={arrowActive ? "arrow-collapse rotate" : "arrow-collapse"}
-          //onClick={clickRotateArrow}
           width="25"
           height="15"
           viewBox="0 0 25 15"

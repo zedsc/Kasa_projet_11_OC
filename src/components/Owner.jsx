@@ -3,6 +3,7 @@ import React from "react";
 const Owner = ({ owner, rating }) => {
   const starsRating = [];
 
+  /* Creating colored star depending on the rating */
   for (let i = 0; i < rating; i++) {
     starsRating.push(
       <svg
@@ -18,14 +19,10 @@ const Owner = ({ owner, rating }) => {
           fill="#FF6060"
         />
       </svg>
-      /*   <img
-        src={`${process.env.PUBLIC_URL}/star-colored.svg`}
-        alt={"star icon - rating" + rating}
-        className="rating__star rating__star--colored"
-      /> */
     );
   }
 
+  /* Creating empty star depending on the rating */
   for (let i = 0; i < 5 - rating; i++) {
     starsRating.push(
       <svg
@@ -41,11 +38,6 @@ const Owner = ({ owner, rating }) => {
           fill="#E3E3E3"
         />
       </svg>
-      /*  <img
-        src={`${process.env.PUBLIC_URL}/star-gray.svg`}
-        alt={"star icon - rating " + rating}
-        className="rating__star rating__star--gray"
-      /> */
     );
   }
 

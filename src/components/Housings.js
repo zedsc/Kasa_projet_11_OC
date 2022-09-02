@@ -7,7 +7,6 @@ const Housings = () => {
 
   useEffect(() => {
     axios.get("logements.json").then((result) => setData(result.data));
-    //.catch((error) => console.log("an error occurs", error));
   }, []);
 
   return (

@@ -27,6 +27,7 @@ const Gallery = ({ housing }) => {
   }
 
   useEffect(() => {
+    /* Checking if the carouselChild array is empty (meaning 1 picture). If it is, it is adding a class to the prev and next buttons to hide them. */
     const prevArrow = document.querySelector(".carousel-control-prev");
     const nextArrow = document.querySelector(".carousel-control-next");
     if (carouselChild.length === 0) {
