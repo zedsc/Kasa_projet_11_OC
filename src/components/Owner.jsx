@@ -7,6 +7,7 @@ const Owner = ({ owner, rating }) => {
   for (let i = 0; i < rating; i++) {
     starsRating.push(
       <svg
+        key={"star-colored" + i}
         className="rating__star rating__star--colored"
         width="36"
         height="36"
@@ -26,6 +27,7 @@ const Owner = ({ owner, rating }) => {
   for (let i = 0; i < 5 - rating; i++) {
     starsRating.push(
       <svg
+        key={"star-gray" + i}
         className="rating__star rating__star--gray"
         width="36"
         height="36"

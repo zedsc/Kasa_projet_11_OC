@@ -64,7 +64,9 @@ const Housing = () => {
             title="Equipements"
             className="housing-desc"
             content={housing.equipments.map((kit) => (
-              <span className="housing-desc__kit">{kit}</span>
+              <span key={housing.id + "-" + kit} className="housing-desc__kit">
+                {kit}
+              </span>
             ))}
           />
         </section>
