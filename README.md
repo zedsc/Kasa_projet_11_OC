@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+![LogoKasa](public/logo_kasa.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+Kasa is an apartment rental site. Objective: complete redesign of the website by using [React](https://reactjs.org/).
+Project 11 of the OpenClassrooms [JavaScript React Developer](https://openclassrooms.com/fr/paths/516-developpeur-dapplication-javascript-react) training program.
 
-### `npm start`
+#### Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+👉 **[Live demo](https://heartfelt-medovik-34f441.netlify.app/)**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1839925f-f89c-4581-9d60-dc729f2da539/deploy-status)](https://app.netlify.com/sites/heartfelt-medovik-34f441/deploys)
 
-### `npm test`
+#### Resources
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Figma model](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=0%3A1) | [Coding guidelines](https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf)
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You need to have **[Node.js v16.15 or higher](https://nodejs.org/en/)** installed on your computer.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Install [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) on your system
+- Clone or download the project
+- Install dependencies with `npm i` or `yarn`
+- Start the project with `npm start` or `yarn start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Dependencies
 
-### `npm run eject`
+- [![React](https://img.shields.io/github/package-json/dependency-version/zedsc/sportsee/react)](https://reactjs.org/)
+- [![axios](https://img.shields.io/github/package-json/dependency-version/zedsc/sportsee/axios)](https://axios-http.com/docs/intro)
+- [![react-boostrap](https://img.shields.io/github/package-json/dependency-version/zedsc/Kasa_projet_11_OC/react-bootstrap)](https://react-bootstrap.github.io/)
+- [![bootstrap](https://img.shields.io/github/package-json/dependency-version/zedsc/Kasa_projet_11_OC/bootstrap)](https://getbootstrap.com/)
+- [![sass](https://img.shields.io/github/package-json/dependency-version/zedsc/Kasa_projet_11_OC/sass)](https://sass-lang.com/install/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Built with
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[React](https://reactjs.org/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+A JavaScript library for building user interfaces
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
+This project is project 11 out of 14 of OpenClassrooms [JavaScript React Developer](https://openclassrooms.com/fr/paths/516-developpeur-dapplication-javascript-react) training. While you can reuse the code, visual resources may not be free of right.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Skills & aim of the project
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Developing routes for a web application with React Router
+- Initialize a web application with a framework
+- Create components with React
