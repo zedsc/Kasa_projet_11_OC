@@ -13,9 +13,7 @@ Project 11 of the OpenClassrooms [JavaScript React Developer](https://openclassr
 
 #### Overview
 
-👉 **[Live demo](https://heartfelt-medovik-34f441.netlify.app/)**
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1839925f-f89c-4581-9d60-dc729f2da539/deploy-status)](https://app.netlify.com/sites/heartfelt-medovik-34f441/deploys)
+👉 **[Live demo](https://kasa-zedsc.netlify.app/)**
 
 #### Resources
 
